@@ -1,0 +1,7 @@
+{
+  "name": "talentsdiversity",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

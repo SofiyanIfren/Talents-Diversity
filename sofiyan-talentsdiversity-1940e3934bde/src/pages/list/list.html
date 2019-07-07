@@ -1,0 +1,17 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Liste des Entreprises
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 padding>Région: {{myKey}}</h3>
+  <ion-item *ngFor="let item of tableauFinal" (click)="itemSelected(item)">
+    <ion-icon name="ios-arrow-dropright" item-end></ion-icon>
+    <b>{{ item["Nom de la structure"] }}</b><br>
+    <i>({{ item["Domaine d'activité"] }})</i>
+  </ion-item> 
+</ion-content>

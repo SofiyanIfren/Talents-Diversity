@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Fiche Entreprise</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div padding>
+    <h3>
+      {{ nom }}
+    </h3><br><br>
+    <ion-icon name="ios-construct-outline"></ion-icon><br>
+    <i>{{ domaine }}</i><br><br>
+
+    <ion-icon name="ios-home-outline"></ion-icon><br>
+    {{ adresse }} <br>
+    {{ codePostal }} - {{ ville }}<br><br>
+
+    <ion-icon name="ios-at-outline"></ion-icon><br>
+    <a href='https://{{ site }}'>{{ site }}</a>
+  </div>
+</ion-content>

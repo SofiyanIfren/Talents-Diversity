@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Sélectionnez une région
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    
+    <button ion-item block outline *ngFor="let item of affichage" (click)="itemSelected(item)">
+        <ion-icon name="md-funnel" item-start color="primary"></ion-icon>{{ item }}
+    </button>
+</ion-content>

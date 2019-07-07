@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div text-center>
+    <h1 color="primary">
+      On a besoin de vous!
+    </h1>
+    <h6>
+      <div>
+        <i>Une expérience à partager?</i><br>
+        <i>Un avis à nous donner?</i><br>
+        <i>Un changement à signaler?</i><br>
+        <i>Un ajout à apporter?</i>
+      </div>
+      <h3><i>N'hésitez plus, écrivez-nous:</i></h3> <br><br>
+    </h6>
+  </div>
+  <form
+      [formGroup]="form"
+      (ngSubmit)="sendMessage()">
+
+      <ion-list>
+         <ion-item margin-bottom>
+            <ion-label>Objet:</ion-label>
+            <ion-input
+               type="string"
+               formControlName="subject"></ion-input>
+         </ion-item>
+
+
+         <ion-item margin-bottom>
+            <ion-label>Message:</ion-label>
+            <ion-textarea
+               formControlName="message"></ion-textarea>
+         </ion-item><br>
+
+         <div text-center>
+          <button ion-button outline text-center round [disabled]="!form.valid">Envoyer</button>
+        </div>
+      </ion-list>
+   </form>
+</ion-content>
